@@ -1,7 +1,7 @@
-.navbar{
+/* .navbar{
     background-color: #eae7dc;
     padding: 15px;
-}
+} */
 .navname{
     font-size: x-large;
     margin-left: 20px;
@@ -10,3 +10,23 @@
     margin-left: 20px;
     font-size: large;
 }
+
+.dark{
+    color: #8e8d8a;
+    size: 40px;
+}
+
+.navbar{
+    background-color: var(--bg-color);
+    color: var(--text-color);
+    padding: 15px;
+}
+
+:root{
+    --bg-color: #eae7dc;
+}
+
+[data-theme="dark"] {
+    --bg-color: #4e4e50;
+    --text-color: #fff;
+  }
