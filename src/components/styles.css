@@ -30,6 +30,9 @@
     color: var(--text-color);
     font-weight: 500;
 }
+.navbar .navname:visited{
+    color: var(--text-color);
+}
 .navbar .navname:hover{
     color: var(--name);
 }
@@ -37,6 +40,9 @@
 .navbar .mr-auto .link{
     margin-left: 20px;
     font-size: large;
+    color: var(--text-color);
+}
+.navbar .mr-auto .link:visited{
     color: var(--text-color);
 }
 .navbar .mr-auto .link:hover{
@@ -72,4 +78,19 @@
 code{
     font-family: Helvetica, Arial, sans-serif;
     color: var(--name);
+}
+.hello{
+    margin-top: 80px;
+}
+.card{
+    background-color: transparent;
+    color: var(--text-color);
+    padding: 10px;
+}
+.a{
+    padding-left: 18px;
+    padding-right: 10px;
+}
+.connect-img{
+    padding-bottom: 9px;
 }
