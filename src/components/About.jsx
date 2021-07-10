@@ -5,6 +5,7 @@ import helloLight from '../media/hello-light.png';
 import helloDark from '../media/hello-dark.png';
 import connectLight from '../media/connect-light.png';
 import connectDark from '../media/connect-dark.png';
+import resume from '../media/TejaswiChaudhari_Resume.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
@@ -101,12 +102,16 @@ const About = ({darkMode}) => {
                           <p>I am a passionate developer and believe in networking a lot. Many things excite me in this expanse of technology, and I like to explore and keep my options open all the time. I am up for challenges that take me by surprise and make my head hurt. I'm comfortable working on any domain if I find the project is worth it. You can imagine me focused on the laptop screen and typing or taking down notes. Apart from technical things, I enjoy good books and verses, and I have a good eye for art.</p>
                           <p>Now that you know me a bit, please feel free to drop a text because Communication is a two-way street.</p>
                         </Card.Text>
+                        <a href={resume} target="_blank" rel="noreferrer noopener">
                         <Button variant={darkMode ? "outline-light" : "outline-dark"} className='a'>
                           <FontAwesomeIcon className="dark" size="lg" icon={faFile}/> View Resume
                         </Button>
+                        </a>
+                        <a href={resume} download>
                         <Button variant={darkMode ? "outline-light" : "outline-dark"} className='a'>
                           <FontAwesomeIcon className="dark" size="lg" icon={faFile}/> Download Resume
                         </Button>
+                        </a>
                       </Card.Body>
                     </Card>
                   </Col>
@@ -131,8 +136,7 @@ const About = ({darkMode}) => {
                 </Row>
               </Container>
             </Fade>
-        </div>
-        
+        </div>   
     )
 }
 
