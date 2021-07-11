@@ -2,7 +2,7 @@ import './App.css';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import 'font-awesome/css/font-awesome.min.css';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
-import { About } from './components'
+import { About, Skills } from './components'
 import { useState } from "react";
 import Navbar from 'react-bootstrap/Navbar'
 import Nav from 'react-bootstrap/Nav'
@@ -21,7 +21,7 @@ function App() {
       <div className="App" data-theme={darkMode ? "dark" : "light"}>
         <Switch>
         <Route exact path="/">
-          <Navbar expand="lg" className="navbar" data-theme={darkMode ? "dark" : "light"}>
+          <Navbar sticky="top" expand="lg" className="navbar" data-theme={darkMode ? "dark" : "light"}>
             <Navbar.Brand href="#" className="navname">Welcome!</Navbar.Brand>
             <Navbar.Toggle aria-controls="basic-navbar-nav" />
             <Navbar.Collapse id="basic-navbar-nav">
@@ -39,6 +39,7 @@ function App() {
           </Navbar>
           <hr></hr>
           <About darkMode={darkMode} />
+          <Skills darkMode={darkMode} />
           </Route>
         </Switch>
       </div>

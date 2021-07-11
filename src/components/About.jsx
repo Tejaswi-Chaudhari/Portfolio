@@ -86,7 +86,7 @@ const About = ({darkMode}) => {
                     </span>
                 </h2>
                 <center>
-                  <img src={darkMode? helloDark : helloLight} alt="hello" className="hello-img img-fluid animated"/>
+                  <img src={darkMode? helloDark : helloLight} alt="hello" className="hello-img"/>
                 </center>
             </AttentionSeeker>
             <hr></hr>
@@ -97,10 +97,11 @@ const About = ({darkMode}) => {
                   <Col lg={8} align='center'>
                     <Card className="card">
                       <Card.Body>
-                        <Card.Title>Let's have an introduction!</Card.Title>
+                        <Card.Title><lead>Let's have an introduction!</lead></Card.Title>
+                        <br></br>
                         <Card.Text>
-                          <p>I am a passionate developer and believe in networking a lot. Many things excite me in this expanse of technology, and I like to explore and keep my options open all the time. I am up for challenges that take me by surprise and make my head hurt. I'm comfortable working on any domain if I find the project is worth it. You can imagine me focused on the laptop screen and typing or taking down notes. Apart from technical things, I enjoy good books and verses, and I have a good eye for art.</p>
-                          <p>Now that you know me a bit, please feel free to drop a text because Communication is a two-way street.</p>
+                          <p>I am a <strong>passionate developer</strong> and believe in <strong>networking</strong> a lot. Many things excite me in this expanse of technology, and I like to explore and keep my options open all the time. I am up for challenges that take me by surprise and make my head hurt. I'm comfortable working on any domain if I find the project is worth it. You can imagine me focused on the laptop screen and typing or taking down notes. Apart from technical things, I enjoy good books and verses, and I have a good eye for art.</p>
+                          <p>Now that you know me a bit, please feel free to drop a text because <strong>Communication is a two-way street.</strong></p>
                         </Card.Text>
                         <a href={resume} target="_blank" rel="noreferrer noopener">
                         <Button variant={darkMode ? "outline-light" : "outline-dark"} className='a'>
@@ -118,7 +119,8 @@ const About = ({darkMode}) => {
                   <Col lg={4} align='center'>
                     <Card className="card">
                       <Card.Body>
-                        <Card.Title>Let's Connect!</Card.Title>
+                        <Card.Title><lead>Let's Connect!</lead></Card.Title>
+                        <br></br>
                         <a href="https://www.linkedin.com/in/tejaswi-chaudhari/" target="_blank" rel="noreferrer noopener">
                           <Button variant={darkMode ? "outline-light" : "outline-dark"} className='a'>
                             <FontAwesomeIcon className="dark" size="lg" icon={faLinkedin}/> Tejaswi Chaudhari
@@ -134,6 +136,8 @@ const About = ({darkMode}) => {
                     </Card>
                   </Col>
                 </Row>
+                <br></br>
+                <hr></hr>
               </Container>
             </Fade>
         </div>   

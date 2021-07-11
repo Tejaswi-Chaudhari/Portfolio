@@ -2,20 +2,20 @@
     --bg-color: #eae7dc;
     --text-color: #000000;
     --page-color: #eae7dc;
-    --fill-color: #e85a4f;
     --hello: #8e8d8a;
     --description: #e85a4f;
     --name: #e98074;
+    --border-width: 1px;
 }
 
 [data-theme="dark"] {
     --bg-color: #1a1a1d;
     --text-color: #ffffff;
     --page-color: #1a1a1f;
-    --fill-color: #950740;
     --description: #eae7dc;
     --hello: #ffffff;
     --name: #c3073f;
+    --border-width: 2px;
 }
 
 .App{
@@ -94,4 +94,43 @@ code{
 }
 .connect-img{
     padding-bottom: 9px;
+}
+strong, .with{
+    color: var(--name);
+}
+.skill-h{
+    margin-top: 15px;
+}
+.skills-img{
+    margin-left: 15px;
+    margin-top: 80px;
+    height: 150px;
+    width: auto;
+}
+.skills-btn{
+    width: 70px;
+    height: 70px;
+    padding: 10px 16px;
+    border-radius: 35px;
+    border-width: var(--border-width);
+}
+.skills-btn{
+    color: #8e8d8a;
+}
+.skill-txt{
+    font-weight: bold;
+    font-size: 30px;
+    vertical-align: middle;
+}
+.skill-card{
+    color: #ffffff;
+    margin-top: 10px;
+    background-color: var(--name);
+    box-shadow: 0 6px 10px rgba(0,0,0,.08), 0 0 6px rgba(0,0,0,.05);
+    transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
+    cursor: pointer;
+}
+.skill-card:hover{
+    transform: scale(1.05);
+    box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
 }
