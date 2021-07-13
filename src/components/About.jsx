@@ -1,11 +1,10 @@
 import React from 'react'
-import { AttentionSeeker, Fade } from "react-awesome-reveal";
+import { Fade } from "react-awesome-reveal";
 import './styles.css';
-import helloLight from '../media/hello-light.png';
-import helloDark from '../media/hello-dark.png';
 import connectLight from '../media/connect-light.png';
 import connectDark from '../media/connect-dark.png';
 import resume from '../media/TejaswiChaudhari_Resume.pdf'
+import transcript from '../media/TejaswiChaudhari_transcript.pdf'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faGithub, faLinkedin } from '@fortawesome/free-brands-svg-icons';
 import { faFile } from '@fortawesome/free-solid-svg-icons';
@@ -76,32 +75,19 @@ const About = ({darkMode}) => {
 
     return (
         <div>
-            <AttentionSeeker shakeX>
-                <h1 className="display-3 hello" align="center">HELLO!<code> I'm Tejaswi</code></h1>
-                <h2 className="lead" align="center">I
-                    <span
-                        class="txt-rotate"
-                        data-period="2000"
-                        data-rotate='[ " am a Full-Stack Developer.", " can work with NLP.", " love designing.", " am working on Problem Solving.", " am a learner for life!" ]'>
-                    </span>
-                </h2>
-                <center>
-                  <img src={darkMode? helloDark : helloLight} alt="hello" className="hello-img"/>
-                </center>
-            </AttentionSeeker>
-            <hr></hr>
-            <br></br>
+          <br></br>
+          <br></br>
             <Fade>
               <Container align='center'>
                 <Row>
                   <Col lg={8} align='center'>
-                    <Card className="card">
+                    <Card className="nbcard">
                       <Card.Body>
-                        <Card.Title><lead>Let's have an introduction!</lead></Card.Title>
+                        <Card.Title><h2 className="lead">Let's have an introduction!</h2></Card.Title>
                         <br></br>
                         <Card.Text>
-                          <p>I am a <strong>passionate developer</strong> and believe in <strong>networking</strong> a lot. Many things excite me in this expanse of technology, and I like to explore and keep my options open all the time. I am up for challenges that take me by surprise and make my head hurt. I'm comfortable working on any domain if I find the project is worth it. You can imagine me focused on the laptop screen and typing or taking down notes. Apart from technical things, I enjoy good books and verses, and I have a good eye for art.</p>
-                          <p>Now that you know me a bit, please feel free to drop a text because <strong>Communication is a two-way street.</strong></p>
+                          <p>I am a <strong>Sophomore student</strong> at Usha Mittal Institute of Technology, Department of <strong>Computer Science and Technology</strong>, I am a <strong>passionate developer</strong> and believe in <strong>networking</strong> a lot. Many things excite me in this expanse of technology, and I like to explore and keep my options open all the time. I am up for challenges that take me by surprise and make my head hurt. I'm comfortable working on any domain if I find the project is worth it. You can imagine me focused on the laptop screen and typing or taking down notes. Apart from technical things, I enjoy good books and verses, and I have a good eye for art.<br></br>
+                          Now that you know me a bit, please feel free to drop a text because <strong>Communication is a two-way street.</strong></p>
                         </Card.Text>
                         <a href={resume} target="_blank" rel="noreferrer noopener">
                         <Button variant={darkMode ? "outline-light" : "outline-dark"} className='a'>
@@ -113,13 +99,18 @@ const About = ({darkMode}) => {
                           <FontAwesomeIcon className="dark" size="lg" icon={faFile}/> Download Resume
                         </Button>
                         </a>
+                        <a href={transcript} target="_blank" rel="noreferrer noopener">
+                        <Button variant={darkMode ? "outline-light" : "outline-dark"} className='a'>
+                          <FontAwesomeIcon className="dark" size="lg" icon={faFile}/> View Transcript
+                        </Button>
+                        </a>
                       </Card.Body>
                     </Card>
                   </Col>
                   <Col lg={4} align='center'>
-                    <Card className="card">
+                    <Card className="nbcard">
                       <Card.Body>
-                        <Card.Title><lead>Let's Connect!</lead></Card.Title>
+                        <Card.Title><h2 className="lead">Let's Connect!</h2></Card.Title>
                         <br></br>
                         <a href="https://www.linkedin.com/in/tejaswi-chaudhari/" target="_blank" rel="noreferrer noopener">
                           <Button variant={darkMode ? "outline-light" : "outline-dark"} className='a'>
@@ -138,6 +129,7 @@ const About = ({darkMode}) => {
                 </Row>
                 <br></br>
                 <hr></hr>
+                <br></br>
               </Container>
             </Fade>
         </div>   

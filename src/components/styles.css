@@ -22,6 +22,11 @@
     background-color: var(--page-color);
     height: 100%;
     width: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    overflow: hidden;
 }
 
 .navbar .navname{
@@ -63,8 +68,8 @@
     color: var(--text-color);
 }
 .hello-img{
-    margin-top: 100px;
-    width: 800px;
+    margin-top: 10px;
+    max-height: 250px;
 }
 .display-3{
     color: var(--hello);
@@ -82,7 +87,7 @@ code{
 .hello{
     margin-top: 80px;
 }
-.card{
+.nbcard{
     background-color: transparent;
     color: var(--text-color);
     padding: 10px;
@@ -91,6 +96,9 @@ code{
 .a{
     padding-left: 18px;
     padding-right: 10px;
+}
+.about-h{
+    font-size: x-large;
 }
 .connect-img{
     padding-bottom: 9px;
@@ -122,7 +130,7 @@ strong, .with{
     font-size: 30px;
     vertical-align: middle;
 }
-.skill-card{
+.skill-nbcard{
     color: #ffffff;
     margin-top: 10px;
     background-color: var(--name);
@@ -130,7 +138,66 @@ strong, .with{
     transition: .3s transform cubic-bezier(.155,1.105,.295,1.12),.3s box-shadow,.3s -webkit-transform cubic-bezier(.155,1.105,.295,1.12);
     cursor: pointer;
 }
-.skill-card:hover{
+.skill-nbcard:hover{
     transform: scale(1.05);
     box-shadow: 0 10px 20px rgba(0,0,0,.12), 0 4px 8px rgba(0,0,0,.06);
+}
+.exp{
+    border-width: 1px;
+    border-color: var(--name);
+    background-color: transparent;
+}
+
+.flip-card {
+    background-color: transparent;
+    width: 300px;
+    height: 300px;
+    perspective: 1000px;
+    color: var(--text-color);
+  }
+  
+.flip-card-inner {
+    position: relative;
+    transition: transform 1s;
+    transform-style: preserve-3d;
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+}
+
+.flip-card:hover .flip-card-inner {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front, .flip-card-back {
+    position: absolute;
+    -webkit-backface-visibility: hidden;
+    backface-visibility: hidden;
+}
+
+.flip-card-back {
+    transform: rotateY(180deg);
+}
+
+.sbtn{
+    margin-top: 20px;
+}
+
+.ph{
+    background-color: transparent;
+    border-width: 1px;
+    border-color: var(--text-color);
+    color: var(--hello);
+}
+
+.contact-img{
+    height: 150px;
+    width: auto;
+    margin-left: 35px;
+}
+.contact-text{
+    color: var(--text-color);
+}
+.footer-text{
+    text-align: center;
+    color: var(--text-color);
+    margin-top: 100px;
 }
